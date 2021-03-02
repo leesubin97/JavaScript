@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>체육관 이용요금</h1>
+
+기본 이용료(4시간) 40,800원
+
+<form name="f1">
+
+  <input type="checkbox" onclick="sum(0)">야간조명(20,000원)<br>
+  <input type="checkbox" onclick="sum(1)">배구 네트 *2장 (4,000원)<br>
+  <input type="checkbox" onclick="sum(2)">배구공 * 10개(5,000원) <br>
+
+
+
+  <input type="text" id="t1" size="10" value="40800">
+
+</form>
+
+
+
+<script type="text/javascript">
+
+    //text필드 value로 가져오기, Number로 감싸면 parseInt와 같은 효과
+
+    var total = parseInt(document.getElementById("t1").value);
+	
+
+
+
+
+    //배열 생성 방법
+
+    //var arr=["aaa","bbb"];
+
+    var arr = new Array(2); //0~2번지
+
+    arr[0] = 20000;
+
+    arr[1] = 4000;
+
+    arr[2] = 5000;
+
+
+
+    function sum(n) {
+
+        if (document.f1.elements[n].checked == true) {
+        	/* document.form1.elements[n].checked == true
+        	체크 되었을 때 참이라는것*/
+
+            total = total + arr[n];
+
+        } else {
+
+            total = total - arr[n];
+
+        }
+
+
+
+        document.f1.elements[3].value = total;
+
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

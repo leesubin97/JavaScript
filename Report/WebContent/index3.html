@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div style="  
+			 border: 3px  solid ;
+			 width : 850px;
+			 height : 500px;
+			
+			 ">
+			 
+			 <h1>변수의 연산</h1>
+			 <h2>a,b 에 대해서 변수 a와 b의 계산 결과를 표시합니다.</h2>
+			 
+<button type="button" onclick = "plus()">덧셈</button>
+<button type="button" onclick = "ma()">뺄셈</button>
+<button type="button" onclick = "mul()">곱셈</button>
+<button type="button" onclick = "div()"> 나눗셈     </button>
+<button type="button" onclick = "change()">나머지</button>
+<br>
+
+<input type="text" id = "a" size = "20" value = "0">
+<input type="text" id = "oper" size = "10" value = "">
+<input type="text" id = "b" size = "20" value = "0">
+<p>=</p>
+<input type="text" id = "result" size = "20" value = "0">
+
+
+
+
+</div>
+
+
+<script type="text/javascript">
+
+function plus() {
+	var a = parseInt(document.getElementById("a").value);
+	var b = parseInt(document.getElementById("b").value);
+	var result = a + b; 
+	document.getElementById("result").value = result;
+	
+
+}
+
+
+
+
+
+
+
+
+
+function ma() {
+
+	window.alert(a-b);
+
+}
+
+function mul() {
+
+	window.alert(a*b);
+
+}
+
+function div() {
+
+	window.alert(a/b);
+
+}
+function change() {
+
+	window.alert(a%b);
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

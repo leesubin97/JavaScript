@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+
+function add(){
+	
+	document.getElementById("oper").value = "+";
+
+    var n1 = parseInt(document.getElementById("num1").value);
+
+    var n2 = parseInt(document.getElementById("num2").value);
+
+    var sum = n1+n2;
+
+    document.getElementById("result").value = sum;
+
+    }
+
+function sub(){
+
+	document.getElementById("oper").value = "-";
+	
+    var n1 = parseInt(document.getElementById("num1").value);
+
+    var n2 = parseInt(document.getElementById("num2").value);
+
+    var sub = n1-n2;
+
+    document.getElementById("result").value = sub;
+
+    }
+
+function mul(){
+	
+	document.getElementById("oper").value = "*";
+
+    var n1 = parseInt(document.getElementById("num1").value);
+
+    var n2 = parseInt(document.getElementById("num2").value);
+
+    var mul = n1*n2;
+
+    document.getElementById("result").value = mul;
+
+    }
+
+function div(){
+	
+	document.getElementById("oper").value = "/";
+
+    var n1 = parseInt(document.getElementById("num1").value);
+
+    var n2 = parseInt(document.getElementById("num2").value);
+
+    var div = n1/n2;
+
+    document.getElementById("result").value = div;
+
+    }
+    
+
+function change(){
+	
+	document.getElementById("oper").value = "%";
+
+    var n1 = parseInt(document.getElementById("num1").value);
+
+    var n2 = parseInt(document.getElementById("num2").value);
+
+    var change = n1%n2;
+
+    document.getElementById("result").value = change;
+
+    }    
+    
+
+
+</script>
+
+
+
+
+</head>
+
+<body>
+<div style="  
+			 border: 3px  solid ;
+			 width : 850px;
+			 height : 500px;
+			
+			 ">
+			 
+			 <h1>변수의 연산</h1>
+			 <h2>a,b 에 대해서 변수 a와 b의 계산 결과를 표시합니다.</h2>
+			 
+<button type="button" onclick = "add()">덧셈</button>
+<button type="button" onclick = "sub()">뺄셈</button>
+<button type="button" onclick = "mul()">곱셈</button>
+<button type="button" onclick = "div()"> 나눗셈     </button>
+<button type="button" onclick = "change()">나머지</button>
+<br>
+
+<input type="text" id = "num1" size = "20" value = "0">
+<input type="text" id = "oper" size = "10" value = "">
+<input type="text" id = "num2" size = "20" value = "0">
+<p>=</p>
+<input type="text" id = "result" size = "20" value = "0">
+
+
+
+
+</div>
+</body>
+</html>
