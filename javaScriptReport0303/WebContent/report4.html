@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+/* days = Math.ceil(days); */
+
+<h1>미술관 및 박물관의 링크</h1>
+
+<form name = "f1">
+
+<select name = url onchange = "move(this.value)">
+<!-- onchange는 이벤트가 변경됐을때 작동하는 함수이다
+
+onchange는 input이나 select 등의 데이터가 변경될 때 호출되는 이벤트이다.
+ -->
+	<option value = "">대상을 선택</option>
+	<option value = "https://sema.seoul.go.kr/">서울시립미술관</option>
+	<option value = "https://www.mmca.go.kr/main.do">국립현대미술관</option>
+	<option value = "https://www.sac.or.kr/site/main/home">예술의 전당</option>
+	<option value = "https://www.museum.go.kr/site/main/home">국립중앙박물관 </option>
+	<option value = "https://museum.seoul.go.kr/www/NR_index.do?sso=ok">서울역사박물관</option>
+	<option value = "https://www.nfm.go.kr/home/index.do">국립민속박물관</option>
+	
+	
+	</select>
+</form>
+
+<script type="text/javascript">
+function move(url){
+	location.href = url;
+}
+
+</script>
+
+</body>
+</html>

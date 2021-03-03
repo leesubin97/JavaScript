@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>환영합니다</h1>
+
+<form name="f1">
+
+현재시각은 <input type="text" size="10" name="tbox">입니다
+
+</form>
+
+
+
+<script type="text/javascript">
+
+function nowTime() {
+
+	var now = new Date();
+	var h = now.getHours();
+	var m = now.getMinutes();
+	var s = now.getSeconds();
+	
+
+	if(h < 10){
+
+		h = "0" + h;
+
+	}
+
+	if(m < 10){
+
+		m = "0" + m;
+
+	}
+
+	if(s < 10){
+
+		s = "0" + s;
+
+	}
+
+	document.f1.tbox.value = h + ":" + m + ":" + s;	
+
+}
+
+
+
+ setInterval('nowTime()', 1000); 
+ /* 이게 잇어야 시간이 실행된다.
+setInterval는 일정시간동안 계속 진행된다 함수가*/
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>2개의 주사위</h1>
+<p>버튼을 클릭하면 2개의 주사위가 랜덤으로 됩니다.</p>
+<img alt = "" id = "img" src = "./images/sai_1.gif">
+<img alt = "" id = "img2" src = "./images/sai_6.gif">
+
+<button type="button" onclick = "dice()"> 주사위 굴리기</button>
+
+<script type="text/javascript">
+function dice(){
+	let dice1 = parseInt((Math.random()*5)+1);
+	let dice2 = parseInt((Math.random()*5)+1);
+		
+	
+	
+	document.getElementById('img').src = "./images/sai_"+ dice1 + ".gif";
+	document.getElementById('img2').src = "./images/sai_"+ dice2 + ".gif";
+}
+
+</script>
+
+</body>
+</html>
